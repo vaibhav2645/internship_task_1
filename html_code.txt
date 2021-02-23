@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap_css.css">
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+header{
+	padding:5px;
+	padding-bottom:0px;
+}
+main{
+	padding:5px;
+	padding-top:0px;
+}
+.navbar {
+  width: 100%;
+  background-color: #171717;
+  overflow: auto;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: black;
+}
+
+.dropbtn {
+  background-color: #171717;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdon {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdon-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+#hd2{
+	background-color:#8b0000;
+	}
+#hd3{
+	background-color:#8b0000;
+	padding-top:6px;
+	border:1px;
+}
+#img1{
+  filter: grayscale(50%);
+  border-radius: 8px;
+  text-shadow: 20px 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 0 10px #ccc;
+   -webkit-box-shadow: 0 0 10px #ccc;
+   box-shadow: 0 0 10px #ccc;
+   align:center;
+}
+#cont {
+
+  position: relative;
+}
+#cont1 {
+  top:50px;
+  position: relative;
+}
+#text {
+  position: absolute;
+  top:430px;
+  left:640px;
+  bottom: 20px;
+  center: 10px;
+  color: #A93226;
+}
+#text1 {
+  position: absolute;
+  top:410px;
+  left:290px;
+  bottom: 20px;
+  center: 10px;
+  color:#DC7633;
+}
+#text2 {
+  position: absolute;
+  top:410px;
+  left:1040px;
+  bottom: 20px;
+  center: 10px;
+  color: #C0392B;
+}
+#text3 {
+  position: absolute;
+  top:790px;
+  left:290px;
+  bottom: 20px;
+  center: 10px;
+  color: #C0392B;
+}
+#text4 {
+  position: absolute;
+  top:790px;
+  left:1040px;
+  bottom: 20px;
+  center: 10px;
+  color: #C0392B;
+}
+
+
+.dropdon-content a {
+  color: #E5E7E9;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: #E5E7E9;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+.dropdon-content a:hover {background-color: #555;}
+
+.dropdon:hover .dropdown-content {display: block;}
+
+.dropdon:hover .dropbtn {background-color: #555;}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+</style>
+<body>
+<header>
+
+<header id="hd2">
+</header>
+<div class="navbar">
+<div class="dropdon">
+  <button class="dropbtn">Menu</button>
+  <div class="dropdon-content">
+  </div>
+</div>
+  <div class="search-container">
+    <form action="/action_page.php" target="_blank">
+      <input type="text" placeholder="HRSummit" name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+  <a href="#" color="white"><i class="fa fa-fw fa-user"></i> Login</a>
+</div>
+<footer id="hd3">
+</footer>
+</header>
+<main class="responsive">
+  <div
+    class="p-5 text-center bg-image"
+    style="
+      background-image: url('internship_task/hr.jpg');
+      height: 800px;
+	  width:100%;
+	filter: brightness(100%);  "
+  >
+  <div id="cont">
+  <img src="internship_task/hr2.jpg" height="500px" width="100%" align="center" id="img1" >
+    <div id="text">
+
+  <h2>Agenda</h2>
+
+  </div>
+</div>
+<br>
+<br>
+<div id="cont">
+	<img src="internship_task/venue.jpg" height="450px" align="left" id="img1"  >
+	<div id="text1">
+		<h3>Venue </h3>
+	</div>
+</div>
+<div id="cont">
+	<img src="internship_task/aboutus.jpg" height="450px" align="right" id="img1" >
+	<div id="text2">
+		<h3>About Us </h3>
+	</div>
+</div>
+<br>
+<br>
+<br>
+
+<div id="cont1" >
+	<img src="internship_task/sponsors.jpg" height="450px" width="675px" align="left" id="img1"  >
+	<div id="text3">
+		<h3>Sponsors </h3>
+
+	</div>
+</div>
+<div id="cont1">
+	<img src="internship_task/contactus.jpg" height="450px" width="675px" align="right" id="img1" >
+	<div id="text4">
+	<h3>Contact Us </h3>
+
+	</div>
+</div>
+
+</div>
+</main>
+<footer>
+</footer>
+<script src="js/bootstrap"></script>
+</body>
+</html> 
